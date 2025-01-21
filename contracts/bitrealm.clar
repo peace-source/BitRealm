@@ -31,4 +31,32 @@
 (define-constant ERR-INVALID-TRADE-STATUS (err u27))
 (define-constant ERR-INSUFFICIENT-BALANCE (err u28))
 
+;; Constants for game mechanics
+(define-constant MAX-LEVEL u100)
+(define-constant MAX-EXPERIENCE-PER-LEVEL u1000)
+(define-constant BASE-EXPERIENCE-REQUIRED u100)
+(define-constant RATE-LIMIT-WINDOW u144)  ;; 24 hours in blocks
+(define-constant MAX-CALLS-PER-WINDOW u100)
 
+;; Event Types
+(define-constant EVENT-ASSET-MINTED "asset-minted")
+(define-constant EVENT-ASSET-TRANSFERRED "asset-transferred")
+(define-constant EVENT-AVATAR-CREATED "avatar-created")
+(define-constant EVENT-EXPERIENCE-GAINED "experience-gained")
+(define-constant EVENT-LEVEL-UP "level-up")
+(define-constant EVENT-WORLD-CREATED "world-created")
+(define-constant EVENT-TRADE-INITIATED "trade-initiated")
+(define-constant EVENT-TRADE-COMPLETED "trade-completed")
+(define-constant EVENT-TRADE-CANCELLED "trade-cancelled")
+
+;; Protocol Configuration
+(define-data-var protocol-fee uint u10)
+(define-data-var max-leaderboard-entries uint u50)
+(define-data-var total-prize-pool uint u0)
+(define-data-var total-assets uint u0)
+(define-data-var total-avatars uint u0)
+(define-data-var total-worlds uint u0)
+(define-data-var total-trades uint u0)
+
+;; Protocol Administrator Whitelist
+(define-map protocol-admin-whitelist principal bool)
