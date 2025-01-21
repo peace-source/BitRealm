@@ -140,8 +140,7 @@
     achievements: (list 20 (string-ascii 50)),
     equipped-assets: (list 5 uint),
     world-access: (list 10 uint)
-  }
-)
+  })
 
 ;; Game Worlds
 (define-map game-worlds
@@ -648,7 +647,7 @@
   )
 )
 
-private (distribute-reward 
+(define-private (distribute-reward 
   (player principal) 
   (previous-result (response bool uint))
 )
