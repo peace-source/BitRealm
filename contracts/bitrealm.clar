@@ -1,5 +1,20 @@
-
-;; bitrealm
+;; Title: BitRealm Game Smart Contract
+;;
+;; Summary:
+;; A comprehensive blockchain-based gaming platform that enables players to collect, trade,
+;; and battle with digital assets across multiple game worlds. Features include NFT assets,
+;; player avatars, experience systems, leaderboards, and trading mechanisms.
+;;
+;; Description:
+;; The BitRealm contract implements a full-featured gaming ecosystem with:
+;; - NFT-based game assets with attributes and leveling
+;; - Player avatar system with experience and achievements
+;; - Multiple game worlds with specific entry requirements
+;; - Comprehensive trading system for assets
+;; - Leaderboard and ranking system
+;; - Built-in rate limiting for security
+;; - Reward distribution system
+;; - Event tracking for all major actions
 
 ;; Constants
 (define-constant ERR-NOT-AUTHORIZED (err u1))
